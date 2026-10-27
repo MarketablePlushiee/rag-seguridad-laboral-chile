@@ -5,7 +5,7 @@ from rag_engine import query_rag
 # Configuración de la página
 st.set_page_config(
     page_title="IntegraSST - Asistente Normativo de Seguridad Laboral",
-    page_icon="🛡️",
+    page_icon="⚖️",
     layout="wide"
 )
 
