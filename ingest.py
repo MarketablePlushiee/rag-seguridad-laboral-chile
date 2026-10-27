@@ -29,7 +29,7 @@ def build_vector_db():
     chunks = text_splitter.split_documents(documents)
 
     embeddings = HuggingFaceEmbeddings(
-        model_name="hiamsun/sentence-croissant-llm-base"
+        model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     )
 
     vector_db = Chroma.from_documents(
