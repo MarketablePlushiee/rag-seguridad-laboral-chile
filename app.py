@@ -4,13 +4,13 @@ from rag_engine import query_rag
 
 # Configuración de la página
 st.set_page_config(
-    page_title="SafetyLex Chile - Asistente Normativo de Seguridad Laboral",
+    page_title="IntegraSST - Asistente Normativo de Seguridad Laboral",
     page_icon="🛡️",
     layout="wide"
 )
 
 # Título Principal y Encabezado
-st.title("🛡️ SafetyLex Chile: Asistente Normativo de Seguridad Laboral")
+st.title("🛡️ IntegraSST: Asistente Normativo de Seguridad Laboral")
 st.caption("Consulta inteligente basada en la legislación chilena vigente (Ley 16.744, DS 594, DS 44 y Código del Trabajo).")
 
 # --- BARRA LATERAL (SIDEBAR) ---
@@ -24,7 +24,7 @@ with st.sidebar:
     
     st.warning(
         "💡 **Recomendación:** Si no estás seguro de qué proveedor elegir, "
-        "te sugerimos mantener la opción predeterminada (**Google Gemini**), "
+        "te sugerimos mantener la opción predeterminada, "
         "la cual está optimizada para la precisión de este asistente."
     )
     
