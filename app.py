@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # Título Principal y Encabezado
-st.title("🛡️ IntegraSST: Asistente Normativo de Seguridad Laboral")
+st.title("⚖️ IntegraSST: Asistente Normativo de Seguridad Laboral")
 st.caption("Consulta inteligente basada en la legislación chilena vigente (Ley 16.744, DS 594, DS 44 y Código del Trabajo).")
 
 # --- BARRA LATERAL (SIDEBAR) ---
