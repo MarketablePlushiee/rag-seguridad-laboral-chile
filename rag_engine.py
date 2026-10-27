@@ -57,7 +57,7 @@ def format_docs(docs):
 
 def query_rag(question: str, provider: str, api_key: str):
     vector_store = get_vector_store()
-    retriever = vector_store.as_retriever(search_kwargs={"k": 4})
+    retriever = vector_store.as_retriever(search_kwargs={"k": 6})
     
     docs = retriever.invoke(question)
     context_text = format_docs(docs)
