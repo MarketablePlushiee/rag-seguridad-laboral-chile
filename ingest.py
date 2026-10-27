@@ -22,8 +22,8 @@ def build_vector_db():
             documents.extend(loader.load())
 
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=800,
-        chunk_overlap=150,
+        chunk_size=1000,
+        chunk_overlap=200,
         separators=["Artículo ", "\n\n", "\n", " ", ""]
     )
     chunks = text_splitter.split_documents(documents)
