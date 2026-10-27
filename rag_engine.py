@@ -27,7 +27,7 @@ def get_vector_store():
     if not os.path.exists(DB_DIR) or not os.listdir(DB_DIR):
         build_vector_db()
 
-    embeddings = HuggingFaceEmbeddings(model_name="hiamsun/sentence-croissant-llm-base")
+    embeddings = HuggingFaceEmbeddings(model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
     return Chroma(persist_directory=DB_DIR, embedding_function=embeddings)
 
 def get_llm(provider: str, api_key: str):
